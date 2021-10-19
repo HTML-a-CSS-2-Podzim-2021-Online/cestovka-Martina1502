@@ -1,0 +1,178 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+:root {
+	--hlavni-barva: #F03000;
+    --barva-pozadi: #eee;
+    --barva-datum: grey;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hlavicka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hlavicka__nazev {
+    color: var(--hlavni-barva);
+    font-weight: 800;
+}
+
+.hlavicka__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hlavicka__menu__item {
+    list-style: none;
+    display: inline-block;
+    color: var(--hlavni-barva);
+    font-weight: 550;
+    padding: 1em;
+    text-align: center;
+}
+
+.hlavicka__menu__item:hover {
+    background-color: var(--hlavni-barva);
+    color: white;
+    cursor: pointer;
+}
+
+.nabidka__banner {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    color: white;
+}
+
+.nabidka__popis {
+    font-size: small;
+    font-weight: 500;
+}
+
+.nabidka__cena {
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--hlavni-barva);
+    font-size: small;
+    padding: 0.4em;
+}
+.nabidka--velka {
+    display: grid;
+    align-content: space-between;
+    background-size: cover;
+    padding: 1em;
+}
+
+.nabidka--velka__nazev {
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.nabidka--mala {
+    display: grid;
+    align-content: space-between;
+    background-size: cover;
+    padding: 1em;
+}
+
+.nabidka--mala__nazev {
+    font-size: small;
+    font-weight: 550;
+}
+
+.nabidka--palmy {
+    background-image: url(podklady/palmy.jpg);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.nabidka--jezero {
+    background-image: url(podklady/jezero.jpg);
+}
+
+.nabidka--nakole {
+    background-image: url(podklady/nakole.jpg);
+}
+
+.nabidka--lodicka {
+    background-image: url(podklady/lodicka.jpg);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.nabidka--podkova {
+    background-image: url(podklady/podkova.jpg);
+}
+
+.nabidka--zatoka {
+    background-image: url(podklady/zatoka.jpg);
+}
+
+/**/
+
+.seznam__banner {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1em 0 1em 0;
+}
+
+.vyhoda {
+    text-align: center;
+    background-color:var(--barva-pozadi);
+    padding: 1em;
+    font-size: small;
+}
+
+.vyhoda__nazev {
+    color: var(--hlavni-barva);
+}
+
+.novinka__banner {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em 0 1em 0;
+}
+
+.novinka {
+    background-color: var(--barva-pozadi);
+    padding: 1em;
+    font-size: small;
+}
+
+.novinka__datum {
+    color: var(--barva-datum);
+    font-weight: 550;
+}
+
+.novinka__nazev {
+    color: var(--hlavni-barva);
+    font-size: small;
+}
+
+h2 {
+    font-size: medium;
+    margin-top: 2em;
+}
+
+.paticka {
+    background-color: rgb(80, 78, 78);
+    padding: 0.1em;
+    text-align: center;
+    color: white;
+    font-size: small;
+    font-weight: 550;
+}
+
+
